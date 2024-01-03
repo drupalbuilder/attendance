@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Facade;
 use Illuminate\Support\ServiceProvider;
+Laravel\Passport\PassportServiceProvider::class,
+
 
 return [
 
