@@ -43,7 +43,7 @@ use App\Http\Controllers\Admin\BlockcategoryController;
 |
 */
 
-Route::group(['middleware' => ['web', 'bwsback']], function () {
+/* Route::group(['middleware' => ['web', 'bwsback']], function () {
 
 	Route::get('/login', [LoginController::class, 'index'])->name('login');
 	Route::post('login', [LoginController::class, 'authcheck']);
@@ -52,7 +52,7 @@ Route::group(['middleware' => ['web', 'bwsback']], function () {
 
 	Route::group(['middleware' => ['auth']], function () {
 
-		Route::group(['prefix' => 'admin'], function () {
+		Route::group(['prefix' => 'admin'], function () { */
 
 			Route::get('dashboard', [DashboardController::class, 'dashboard']);
 			Route::get('profile', [UserController::class, 'profile']);
