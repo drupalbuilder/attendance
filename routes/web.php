@@ -72,11 +72,6 @@ Route::get('/', function () {
 			#settings dashboard
 			Route::get('appsettings/dashboard', [AppSettingsController::class, 'index']);
 
-
-
-
-			#user authentication
-			Route::get('not-authorized', [UserController::class, 'noAuth'])->name('not-authorized');
 		});
 		Route::get('logout', [UserController::class, 'logout']);
 
