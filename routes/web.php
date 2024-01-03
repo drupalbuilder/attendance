@@ -47,8 +47,8 @@ Route::get('/dashboard', [DashboardController::class, 'dashboard']);
 Route::group(['middleware' => ['web', 'bwsback']], function () {
 
 	Route::get('/dashboard', [LoginController::class, 'index'])->name('dashboard');
-	Route::post('login', [LoginController::class, 'authcheck']);
-	Route::post('login', [LoginController::class, 'authenticate']);
+/* 	Route::post('login', [LoginController::class, 'authcheck']);
+	Route::post('login', [LoginController::class, 'authenticate']); */
 
 
 	Route::group(['middleware' => ['auth']], function () {
