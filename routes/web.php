@@ -3,10 +3,10 @@
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Password;
 use App\Http\Controllers\Auth\LoginController;
-use App\Http\Controllers\HomeController;
+// use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\UserController;
-use App\Http\Controllers\Admin\MenuController;
+/* use App\Http\Controllers\Admin\MenuController;
 use App\Http\Controllers\Admin\ResourcesController;
 use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\ProductController;
@@ -25,7 +25,7 @@ use App\Http\Controllers\Admin\CmsController;
 use App\Http\Controllers\Admin\ContentController;
 use App\Http\Controllers\Admin\TestController;
 use App\Http\Controllers\WeddingController;
-use App\Http\Controllers\Admin\BlockcategoryController;
+use App\Http\Controllers\Admin\BlockcategoryController; */
 
 
 
