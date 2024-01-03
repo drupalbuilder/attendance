@@ -30,15 +30,7 @@ use App\Http\Controllers\Admin\BlockcategoryController;
 
 
 
-Route::get('/', [HomeController::class, 'index']);
-Route::get('/get-menu', [MenuController::class, 'getMenu'])->name('getMenu');
-Route::get('/wedding-cakes-category', [WeddingController::class, 'weddingCakesCategory'])->name('wedding-cakes-category');
-Route::get('/wedding-cakes', [WeddingController::class, 'weddingCakes'])->name('wedding-cakes');
-Route::get('/birthday-party-and-cakes', [WeddingController::class, 'birthdayParty'])->name('birthday-party-and-cakes');
-Route::get('/voucher-redemption', [WeddingController::class, 'voucherRedemption'])->name('voucher-redemption');
-Route::get('/about-us', [WeddingController::class, 'aboutUs'])->name('about-us');
-Route::get('/contact-us', [WeddingController::class, 'contactUs'])->name('contact-us');
-Route::get('/myWishlist', [WeddingController::class, 'myWishlist'])->name('myWishlist');
+
 
 /*
 |--------------------------------------------------------------------------
