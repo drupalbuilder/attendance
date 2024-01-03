@@ -30,7 +30,9 @@ use App\Http\Controllers\Admin\BlockcategoryController;
 
 
 
-
+Route::get('/', function () {
+    return view('welcome');
+});
 
 /*
 |--------------------------------------------------------------------------
