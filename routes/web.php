@@ -73,7 +73,7 @@ Route::group(['middleware' => ['web', 'bwsback']], function () {
 			Route::post('user/password/update', [UserController::class, 'passwordUpdateUser']);
 
 
-			#Resources
+			/* #Resources
 			Route::get('resources/list', [ResourcesController::class, 'index']);
 			Route::get('resources/edit/{id}', [ResourcesController::class, 'edit']);
 			Route::post('resources/update', [ResourcesController::class, 'update']);
@@ -244,7 +244,7 @@ Route::group(['middleware' => ['web', 'bwsback']], function () {
 
 
 			// Route::post('categorytest/save-category', [CategorytestController::class, 'store']);
-			// Route::get('categorytest/action/{action}/{id}', [CategorytestController::class, 'action']);
+			// Route::get('categorytest/action/{action}/{id}', [CategorytestController::class, 'action']); */
 
 
 
