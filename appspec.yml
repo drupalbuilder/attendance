@@ -1,0 +1,15 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /var/builds/whatsapp/
+    overwrite: merge
+hooks:
+  BeforeInstall:
+    - location: script/pre_install.sh
+      timeout: 300
+      runas: root
+  AfterInstall:
+    - location: script/deploy_laravel.sh
+      timeout: 300
+      runas: root

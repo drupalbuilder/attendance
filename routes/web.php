@@ -72,7 +72,7 @@ Route::group(['middleware' => ['web', 'bwsback']], function () {
 			Route::get('user/password-edit/{id}', [UserController::class, 'editPasswordUser']);
 			Route::post('user/password/update', [UserController::class, 'passwordUpdateUser']);
 
-/* 
+
 			#Resources
 			Route::get('resources/list', [ResourcesController::class, 'index']);
 			Route::get('resources/edit/{id}', [ResourcesController::class, 'edit']);
@@ -235,8 +235,19 @@ Route::group(['middleware' => ['web', 'bwsback']], function () {
 			Route::post('test_c/store-or-update/{groupId}', [TestController::class, 'storeOrUpdate'])->name('test_c.storeOrUpdate');
 
 
-		
- */
+			// #Category
+			// Route::get('categorytest/list', [CategorytestController::class, 'index']);
+			// Route::get('categorytest/edit/{id}', [CategorytestController::class, 'edit']);
+			// Route::post('categorytest/update', [CategorytestController::class, 'update']);
+			// Route::get('categorytest/add', [CategorytestController::class, 'create']);
+			// Route::get('ajax/categories/{id}', [CategorytestController::class, 'ajax']);
+
+
+			// Route::post('categorytest/save-category', [CategorytestController::class, 'store']);
+			// Route::get('categorytest/action/{action}/{id}', [CategorytestController::class, 'action']);
+
+
+
 			#settings dashboard
 			Route::get('appsettings/dashboard', [AppSettingsController::class, 'index']);
 
