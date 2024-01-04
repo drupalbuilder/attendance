@@ -1,22 +1,19 @@
-on:
+on: 
   push:
     branches:
       - master
-
-name: Deploy website on push
-
+name:  Deploy website on push
 jobs:
   web-deploy:
     name: Deploy
     runs-on: ubuntu-latest
-
     steps:
-      - name: Get latest code
-        uses: actions/checkout@v3
-
-      - name: Sync files
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
-        with:
-          server: ${{149.255.58.26 }}
-          username: ${{ drupal@attendance.gprlive.com }}
-          password: ${{ Uf;lyUkcKdJM }}
+    - name: Get latest code
+      uses: actions/checkout@v3
+    
+    - name: Sync files
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: 149.255.58.26
+        username: drupal@attendance.gprlive.com
+        password: Uf;lyUkcKdJM
