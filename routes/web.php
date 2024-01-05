@@ -26,7 +26,7 @@ Route::get('/myWishlist', [WeddingController::class, 'myWishlist'])->name('myWis
 
 
 Route::get('/dashboard', function () {
-    return view('dashboard');
+    return view('Admin.dashboard');
 });
 
 /*
