@@ -25,9 +25,7 @@ Route::get('/contact-us', [WeddingController::class, 'contactUs'])->name('contac
 Route::get('/myWishlist', [WeddingController::class, 'myWishlist'])->name('myWishlist');
 
 
-Route::get('/dashboard', function () {
-    return view('admin.dashboard');
-});
+Route::get('dashboard', [DashboardController::class, 'dashboard']);
 
 /*
 |--------------------------------------------------------------------------
@@ -51,7 +49,7 @@ Route::group(['middleware' => ['web', 'bwsback']], function () {
 
 		Route::group(['prefix' => 'admin'], function () {
 
-			Route::get('dashboard', [DashboardController::class, 'dashboard']);
+			
 			Route::get('profile', [UserController::class, 'profile']);
 			Route::get('users', [UserController::class, 'users']);
 			Route::get('user/edit/{id}', [UserController::class, 'editUser']);
