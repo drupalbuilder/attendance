@@ -31,6 +31,7 @@ Route::get('/', [DashboardController::class, 'dashboard']);
 |
 */
 /* 
+
 Route::group(['middleware' => ['web', 'bwsback']], function () {
 
 	Route::get('/login', [LoginController::class, 'index'])->name('login');
