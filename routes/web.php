@@ -14,18 +14,11 @@ use App\Http\Controllers\Admin\AppSettingsController;
 
 
 
-Route::get('/', [HomeController::class, 'index']);
-Route::get('/get-menu', [MenuController::class, 'getMenu'])->name('getMenu');
-Route::get('/wedding-cakes-category', [WeddingController::class, 'weddingCakesCategory'])->name('wedding-cakes-category');
-Route::get('/wedding-cakes', [WeddingController::class, 'weddingCakes'])->name('wedding-cakes');
-Route::get('/birthday-party-and-cakes', [WeddingController::class, 'birthdayParty'])->name('birthday-party-and-cakes');
-Route::get('/voucher-redemption', [WeddingController::class, 'voucherRedemption'])->name('voucher-redemption');
-Route::get('/about-us', [WeddingController::class, 'aboutUs'])->name('about-us');
-Route::get('/contact-us', [WeddingController::class, 'contactUs'])->name('contact-us');
-Route::get('/myWishlist', [WeddingController::class, 'myWishlist'])->name('myWishlist');
 
 
-Route::get('dashboard', [DashboardController::class, 'dashboard']);
+
+
+Route::get('/', [DashboardController::class, 'dashboard']);
 
 /*
 |--------------------------------------------------------------------------
@@ -37,7 +30,7 @@ Route::get('dashboard', [DashboardController::class, 'dashboard']);
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+/* 
 Route::group(['middleware' => ['web', 'bwsback']], function () {
 
 	Route::get('/login', [LoginController::class, 'index'])->name('login');
@@ -68,7 +61,7 @@ Route::group(['middleware' => ['web', 'bwsback']], function () {
 			Route::get('appsettings/dashboard', [AppSettingsController::class, 'index']);
 
 
-
+ */
 
 			#user authentication
 			Route::get('not-authorized', [UserController::class, 'noAuth'])->name('not-authorized');
