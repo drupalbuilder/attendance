@@ -24,6 +24,11 @@ Route::get('/about-us', [WeddingController::class, 'aboutUs'])->name('about-us')
 Route::get('/contact-us', [WeddingController::class, 'contactUs'])->name('contact-us');
 Route::get('/myWishlist', [WeddingController::class, 'myWishlist'])->name('myWishlist');
 
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+});
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
